@@ -1,3 +1,3 @@
-app_name       = "demo-app"
+app_name       = "live-app"
 instance_count = 2
-environment    = "dev"
+environment    = "uat"
