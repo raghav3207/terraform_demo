@@ -3,6 +3,8 @@ name: Terraform
 on:
   workflow_dispatch:
 
+permissions: write-all
+
 jobs:
   terraform:
     runs-on: ubuntu-latest
@@ -22,3 +24,12 @@ jobs:
 
       - name: Terraform Apply
         run: terraform apply -auto-approve
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          git add .
+          git commit -m "Terraform generated files" || echo "No changes to commit"
+          git push
