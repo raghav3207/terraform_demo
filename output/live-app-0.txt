@@ -1,4 +1,0 @@
-App Name   : live-app
-Environment: uat
-Instance   : 0
-ID         : brave-piranha
