@@ -1,3 +1,3 @@
-app_name       = "live-app"
-instance_count = 2
-environment    = "uat"
+app_name       = "live-app-demo"
+instance_count = 1
+environment    = "prod"
