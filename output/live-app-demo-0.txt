@@ -1,4 +1,4 @@
 App Name   : live-app-demo
-Environment: prod
+Environment: uat
 Instance   : 0
 ID         : brave-piranha
